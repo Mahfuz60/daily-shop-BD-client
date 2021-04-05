@@ -1,0 +1,18 @@
+.card-div{
+    margin-left: 20px;
+}
+.card{
+     margin-bottom: 30px;
+    width: 18rem;
+     color: black;
+     background-color:rgb(213, 214, 214);
+}
+.card-text{
+    font-size: 30px;
+     color:brown;
+     font-weight: 600;
+}
+.card-img{
+    height: 250px;
+    width:285px;
+}
