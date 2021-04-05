@@ -17,7 +17,7 @@ const CheckOut = () => {
             </thead>
             <tbody>
                 <tr>
-                    <td></td>
+                    <td>milk</td>
                     <td>Otto</td>
                     <td>@mdo</td>
                 </tr>
