@@ -16,7 +16,7 @@ const AddProduct = () => {
 
     console.log(productData);
 
-    const url ='http://localhost:5000/addProduct';
+    const url ='https://serene-badlands-73995.herokuapp.com/addProduct';
 
     fetch(url, {
       method: "POST",
@@ -45,17 +45,17 @@ const AddProduct = () => {
 
   return (
     <div className="orderPlace">
-      <h1 style={{ color: "Black" }}>Add your Product </h1>
+      <h1 style={{ color: "Black",backgroundColor:'yellow' }}>Add New Product </h1>
       <form onSubmit={handleSubmit(onSubmit)}>
         <h3 style={{ color: 'Black' }}>Product Name</h3>
         <input name="name" placeholder='Enter Your Product' ref={register} />
         <br />
-        <h3 style={{ color: 'Black' }}>Add Price</h3>
+        <h3 style={{ color: 'Black' }}>Add Price</h3> 
         <input name="price" ref={register} />
-        <br />
-        <input name="exampleRequired" type="file" onChange={handleImageUpload} />
-        <br />
-        <input type="submit" /> 
+        <br /><br/>
+        <input  name="exampleRequired" type="file" onChange={handleImageUpload} />
+        <br /> <br/>
+        <input style={{backgroundColor:'tomato',fontSize:'20px',width:'100px'}} type="submit" /> 
       </form>
     </div>
   );

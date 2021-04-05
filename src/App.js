@@ -23,9 +23,9 @@ function App() {
             <Home />
           </Route>
 
-          <Route path="/addProduct">
+          <PrivateRoute path="/addProduct">
             <AddProduct />
-          </Route>
+          </PrivateRoute>
           <PrivateRoute path="/checkOut/:productType">
             <CheckOut />
           </PrivateRoute>

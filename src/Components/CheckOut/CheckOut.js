@@ -3,6 +3,7 @@ import Table from 'react-bootstrap/Table'
 import Button from 'react-bootstrap/Button'
 
 const CheckOut = () => {
+    
     return (
         <div>
         <h1>Check Out</h1>

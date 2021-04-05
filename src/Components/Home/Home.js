@@ -8,7 +8,7 @@ import Product from '../Products/Product';
 const Home = () => {
     const[products, setProducts] =useState([])
     useEffect(()=>{
-        fetch('http://localhost:5000/products')
+        fetch('https://serene-badlands-73995.herokuapp.com/products')
         .then(res => res.json())
         .then(result=>{
             setProducts(result);
