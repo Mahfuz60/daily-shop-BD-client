@@ -8,14 +8,13 @@ import Login from "./Components/Login/Login";
 import PrivateRoute from "./Components/PrivateRoute/PrivateRoute";
 import CheckOut from "./Components/CheckOut/CheckOut";
 import AddProduct from "./Components/AddProduct/AddProduct";
-// import Product from "./Components/Products/Product";
 export const UserContext = createContext();
 
 function App() {
   const [loggedInUser, setLoggedInUser] = useState({});
   return (
     <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
-      {/* <p>Name : {loggedInUser.name}</p> */}
+      
       <Router>
         <Header />
         <Switch>
@@ -35,9 +34,6 @@ function App() {
           <Route exact path="/">
             <Home />
           </Route>
-          {/* <Route>
-            <Product path="/product"></Product>
-          </Route> */}
         </Switch>
       </Router>
     </UserContext.Provider>

@@ -5,11 +5,14 @@ import "./Product.css";
 import { useHistory } from "react-router";
 
 
+
 const Product = ({ product }) => {
   const history = useHistory();
   const handleOrder = (productType) => {
     history.push(`/checkOut/${productType}`);
   };
+  
+  
   return (
     <div className="col-md-3 ">
       <div className=" card-div">

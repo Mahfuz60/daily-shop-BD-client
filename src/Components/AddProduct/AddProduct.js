@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import axios from "axios";
 import "./AddProduct.css";
 
+
 const AddProduct = () => {
   const { register, handleSubmit, watch, errors } = useForm();
   const [imageUrl, setImageUrl] = useState(null);
@@ -42,6 +43,7 @@ const AddProduct = () => {
         console.log(error);
       });
   };
+
 
   return (
     <div className="orderPlace">

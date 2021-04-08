@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useContext, useState } from 'react';
 import Table from 'react-bootstrap/Table'
 import Button from 'react-bootstrap/Button'
-
+import { UserContext } from '../../App';
 const CheckOut = () => {
+    
     
     return (
         <div>
@@ -18,14 +19,10 @@ const CheckOut = () => {
             <tbody>
                 <tr>
                     <td>milk</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                    <td>1</td>
+                    <td>$8</td>
                 </tr>
-                <tr>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                </tr>
+                
             </tbody>
         </Table>
         <Button variant="warning">Check Out</Button>{' '}
